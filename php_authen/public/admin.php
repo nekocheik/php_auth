@@ -1,1 +1,7 @@
-Réservé à l'admin
+<?php 
+
+class user {
+
+}
+
+?>

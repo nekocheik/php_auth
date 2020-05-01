@@ -1,8 +1,16 @@
 <?php
-$pdo = new PDO("sqlite:../data.sqlite", null, null, [
+require('./vendor/autoload.php');
+
+use \App\{
+  User,
+  admin
+};
+
+$pdo = new PDO("sqlite:./data.sqlite", null, null, [
     PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
     PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC
 ]);
+
 $users = $pdo->query('SELECT * FROM users')->fetchAll();
 ?><!DOCTYPE html>
 <html lang="en">
