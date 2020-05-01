@@ -5,4 +5,4 @@ users
 - id 
 - username
 - password
-- role (admin ou user)
+- role (admin ou user)# php_auth
