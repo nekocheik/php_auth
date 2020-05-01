@@ -1,0 +1,11 @@
+{
+    "name": "php-train-authe/cheik.kone",
+    "description": "personnal project for work my php skills",
+    "authors": [
+        {
+            "name": "cheik",
+            "email": "cheik.kone@hetic.net"
+        }
+    ],
+    "require": {}
+}
