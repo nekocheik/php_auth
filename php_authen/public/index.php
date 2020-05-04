@@ -7,9 +7,8 @@ use \App\{
   Auth
 };
 
-
-
 $router = new AltoRouter();
+
 
 $loadRoute = function ($pageName, $callback = null) {
   new Auth();
@@ -32,6 +31,15 @@ $loadRoute = function ($pageName, $callback = null) {
 
 $router->map('GET', '/', function() use ($loadRoute) {
   $loadRoute('../views/home.php');
+});
+
+
+$router->map('GET', '/singin', function( ) use ($loadRoute) {
+  $loadRoute('../views/register.php');
+});
+
+$router->map('GET', '/singup', function( ) use ($loadRoute) {
+  $loadRoute('../views/register.php');
 });
 
 $router->map('GET','/admin', function() use ($loadRoute) {
