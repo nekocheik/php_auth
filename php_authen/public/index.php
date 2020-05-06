@@ -23,8 +23,9 @@ $loadRoute = function ($pageName, $callback = null) {
   }
 
   $users = $pdo->query('SELECT * FROM users')->fetchAll();
-
+  require '../views/header.php';
   require $pageName;
+  require '../views/footer.php';
 };
 
 
